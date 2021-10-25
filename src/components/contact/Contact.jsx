@@ -23,9 +23,9 @@ export default function Contact() {
                 <span>Contact</span>
                 <form name="contact_form" method="post">
                     <input type="hidden" name="form_name" value="contact_form"/>
-                    <input type="text" name="email_field" placeholder=" Your Email"/>
-                    <textarea name="message_field" placeholder= "Message"></textarea>
-                    <button type= "submit" name="submit_field"> Submit </button>
+                    <input required type="text" name="email_field" placeholder=" Your Email"/>
+                    <textarea required name="message_field" placeholder= "Message"></textarea>
+                    <button type= "submit"> Submit </button>
                 </form>
             </div>
             <div className="bottom-bar">
