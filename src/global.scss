@@ -1,0 +1,25 @@
+$mainColor: #FAF8F6;
+$mainColor1: #3C3C3C;
+$mainColor2: #626E60;
+$accentColor: #945D60;
+$accentColor1: #AF473C;
+$accentColor2: #3b2a61;
+$dark: #252525;
+
+$width:830px;
+
+::-moz-selection {
+    background: #626E60;
+  }
+::-webkit-selection {
+background: #626E60;
+}
+::selection {
+background: #626E60;
+}
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

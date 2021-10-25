@@ -1,0 +1,79 @@
+@import "../../global.scss";
+
+.container{
+    overflow: hidden;
+    background-color: $dark;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .particle{
+        @include mobile{
+            display:none;
+        }
+        width: 100%;
+        height: 100%;
+        top:0;
+        position: absolute;
+        background-image: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+
+    }
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: $mainColor;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        align-items: center;
+        font-family: 'Roboto Slab', sans-serif;
+        letter-spacing: 1px;
+        z-index: 1;
+
+        span{
+            text-align: center;
+            float: center;
+            clear: both;
+            display: inline;
+            line-height: 50pt;
+            font-size: 40px;
+            font-weight: 600;
+
+            @include mobile{
+                font-size:3vh;
+                line-height: normal;
+            }
+                
+        }                    
+    }
+
+    a{
+        position:absolute;
+        display: flex;
+        bottom: 30px;
+        font-size: large;
+        left: 50%  
+    }
+
+    img{
+        width: 50px;
+        animation: arrowBlink 3s infinite;
+        color:white;
+    }
+
+    @keyframes arrowBlink {
+        50%{
+            opacity: 0.08;
+        }
+    }
+}
+
+

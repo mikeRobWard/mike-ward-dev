@@ -1,0 +1,160 @@
+@import "../../global.scss";
+
+.contact{
+    background-color: $mainColor;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    overflow: hidden;
+
+    .background{
+        z-index: 0;
+        overflow: hidden;
+        height: 100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+
+    .main{
+        flex: 1 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+
+        span{
+            line-height: 50pt;
+            font-size: 40px;
+            font-weight: 600;
+            color: $mainColor1;
+            background-color: $mainColor;
+            border-radius: 30px;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 5px;
+            
+            input{
+                @include mobile{
+                    width: 90%
+                }
+                width: 30%;
+                height: 30px;
+                font-size: 14px;
+                border-radius: 5px;
+            }
+
+            textarea{
+                @include mobile{
+                    width:90%;
+                }
+                width: 30%;
+                height: 50%;
+                font-size: 14px;
+                border-radius: 5px;
+            }
+
+            button{
+                width: 240px;
+                height: 40px;
+                color: $mainColor;
+                background-color: $mainColor1;
+                border:0px;
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    border: 2px;
+                    border-color: $mainColor2;
+                    filter: brightness(200%);
+                }
+            }
+
+            p{
+                color:$mainColor1;
+                font-weight: 500;
+                font-size: 20px;
+                background-color: $mainColor;
+                border-radius: 30px;
+                padding: 10px;
+
+            }
+        }
+    }
+    .bottom-bar{
+        bottom: 0;
+        height: 36px;
+        width: 100%;
+        position: absolute;
+        z-index: 99;
+        background-color: $mainColor2;
+        display: flex;
+        flex-direction: row;
+        vertical-align: center;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            @include mobile{
+                font-size: 2.5vw;
+            }
+            flex:1;
+            color: $mainColor;
+            vertical-align: center;
+            align-content: center;
+            justify-content: center;
+            font-size: 14px;
+            padding-left: 11px;
+        }
+
+        #socials{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: right;
+            column-gap: 25px;
+            padding-right: 12px;
+            font-size: 10px;
+            z-index: 1;
+
+            .github{
+                cursor: pointer;
+                color: $mainColor;
+                &:hover{
+                filter:brightness(70%);
+                }
+            }
+            
+            .twitter{
+                cursor: pointer;
+                color: $mainColor;
+                &:hover{
+                filter:brightness(70%);
+                }
+            }
+            .mail{
+                cursor: pointer;
+                color: $mainColor;
+                &:hover{
+                filter:brightness(70%);
+                }
+            }           
+        }
+    }
+}
