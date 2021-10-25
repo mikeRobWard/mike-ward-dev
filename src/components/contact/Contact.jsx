@@ -15,13 +15,6 @@ export default function Contact() {
         return <a href={`mailto:${email}${params}`}>{children}</a>;
       };
 
-    const [message,setMessage] = useState(false)
-    
-    const handleSubmit = (e) =>{
-        e.preventDefault();
-        setMessage(true)
-    }
-
     return(
         <div className="contact" id="contact"> 
             <div className ="background">
@@ -29,15 +22,11 @@ export default function Contact() {
             </div>
             <div className="main">
                 <span>Contact</span>
-<<<<<<< HEAD
-                <form name="contact" data-netlify="true" method="POST" onSubmit={handleSubmit}>
-=======
-                <form name="contact" data-netlify="true" onSubmit={handleSubmit}>
->>>>>>> 10826fe7f5d5cb680c0bb3710eb81d4f9580441e
-                    <input type="text" placeholder=" Your Email"/>
-                    <textarea placeholder= "Message"></textarea>
-                    <button type= "submit"> Submit </button>
-                    {message && <p>Thanks, I'll get back to you ASAP!</p>}
+                <form name="contact_form" method="post">
+                    <input type="hidden" name="form_name" value="contact_form"/>
+                    <input type="text" name="email_field" placeholder=" Your Email"/>
+                    <textarea name="message_field" placeholder= "Message"></textarea>
+                    <button type= "submit" name="submit_field"> Submit </button>
                 </form>
             </div>
             <div className="bottom-bar">
