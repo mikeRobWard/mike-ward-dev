@@ -8,6 +8,10 @@ import Menu from "./components/menu/Menu";
 import React from "react"
 import About from "./components/about/About";
 
+// mobile vh handling
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
   return (
