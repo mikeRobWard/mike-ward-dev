@@ -63,10 +63,10 @@
             font-size: 3.5vh;
             top: 5%;
         }
-        font-size: 40px;
+        font-size: 5vh;
         font-weight: 600;
         position: absolute;
-        top: 40px;
+        top: 5%;
         color: $mainColor;
         z-index: 1;
     }
@@ -81,13 +81,13 @@
         }
         position: absolute;
         font-size: 2.5vh;
-        top: 125px;
+        top: 15%;
         align-items: center;
         color: $mainColor;
         align-content: center;
         justify-content: center;
         text-align: center;
-        line-height: 35px;
+        line-height: normal;
         z-index: 1;
 
         a{
@@ -155,16 +155,17 @@
                         h2{
                             @include mobile{
                                 overflow: hidden;
-                                font-size: 4.5vw;
+                                font-size: 3.5vw;
 
                             }
                             color:$mainColor;
                             font-weight: 500;
+                            font-size: 3vh;
                         }
 
                         p{
                             @include mobile{
-                                font-size: 1.5vh;
+                                font-size: 1.7vh;
                                 overflow: hidden;
                             }
                             color:$mainColor;
@@ -197,6 +198,7 @@
                                 @include mobile{
                                     font-size: 2vh;
                                 }
+                            font-size: 2vh;
                             text-decoration: none;
                             color: $mainColor;
                             }
