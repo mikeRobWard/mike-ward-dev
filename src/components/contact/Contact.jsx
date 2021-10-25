@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
             <div className="main">
                 <span>Contact</span>
-                <form onSubmit={handleSubmit}>
+                <form name="contact" data-netlify="true" onSubmit={handleSubmit}>
                     <input type="text" placeholder=" Your Email"/>
                     <textarea placeholder= "Message"></textarea>
                     <button type= "submit"> Submit </button>
