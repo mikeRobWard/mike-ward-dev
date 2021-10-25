@@ -1,10 +1,18 @@
+@import "./global.scss";
+
 .app{
     height: 100vh;
+    display: flex;
+    position: relative;
+    @include mobile{
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
 
     .sections{
         width: 100%;
         height: calc(100vh - 70px);
-        position: relative;
+        position: absolute;
         background-color: #FAF8F6;
         top: 70px;
         scroll-behavior: smooth;
