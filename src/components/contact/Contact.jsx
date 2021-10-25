@@ -1,6 +1,5 @@
 import React from 'react'
 import "./contact.scss"
-import { useState } from 'react'
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
