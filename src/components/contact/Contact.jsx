@@ -21,8 +21,8 @@ export default function Contact() {
             </div>
             <div className="main">
                 <span>Contact</span>
-                <form name="contact v1" method="post" data-netlify="true" onSubmit="submit">
-                    <input type="hidden" name="form_name" value="contact" />
+                <form name="contact-v2" method="post" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact-v2" />
                     <input required type="text" name="email" placeholder=" Your Email" />
                     <textarea required name="message" placeholder= "Message"></textarea>
                     <button type= "submit"> Submit </button>
