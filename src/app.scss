@@ -4,10 +4,6 @@
     height: 100vh;
     display: flex;
     position: relative;
-    @include mobile{
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
-    }
 
     .sections{
         width: 100%;
