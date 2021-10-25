@@ -21,10 +21,10 @@ export default function Contact() {
             </div>
             <div className="main">
                 <span>Contact</span>
-                <form name="contact_form" method="post">
-                    <input type="hidden" name="form_name" value="contact_form"/>
-                    <input required type="text" name="email_field" placeholder=" Your Email"/>
-                    <textarea required name="message_field" placeholder= "Message"></textarea>
+                <form name="contact" method="POST">
+                    <input type="hidden" name="form_name" value="contact" />
+                    <input required type="text" name="email" placeholder=" Your Email" />
+                    <textarea required name="message" placeholder= "Message"></textarea>
                     <button type= "submit"> Submit </button>
                 </form>
             </div>
