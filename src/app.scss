@@ -1,13 +1,13 @@
 @import "./global.scss";
 
 .app{
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     position: relative;
 
     .sections{
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100% - 70px);
         position: fixed;
         background-color: #FAF8F6;
         top: 70px;
