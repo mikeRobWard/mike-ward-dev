@@ -1,16 +1,14 @@
 @import "./global.scss";
 
 .app{
-    min-height: --webkit-fill-available;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     position: relative;
 
     .sections{
         width: 100%;
-        min-height: --webkit-fill-available;
         height: calc(100vh - 70px);
-        position: absolute;
+        position: fixed;
         background-color: #FAF8F6;
         top: 70px;
         scroll-behavior: smooth;
