@@ -29,7 +29,7 @@ export default function About() {
                     <li>I have three cats: Tofu, Maddie, and Frodo</li>
                     <li>I love sci-fci horror, The Thing (1982) is my favorite</li>
                     <li>I own more Magic: The Gathering cards than I know what to do with</li>
-                    <li>I've performed on-stage with MGMT. I bet you can't guess the instrument</li>
+                    <li>I've performed on-stage with the band MGMT. I bet you can't guess the instrument</li>
                 </ul>
             </div>
         </div>

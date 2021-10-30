@@ -10,7 +10,7 @@ export default function Portfolio() {
         {
             id: "1",
             title: "Spatial Interpolation Toolbox",
-            desc: "A fast, responsive GUI that performs six different methods of spatial interpolation ",
+            desc: "A responsive GUI that performs six methods of spatial interpolation ",
             img: "",
             tech: ['Python ', 'Pandas ', 'PyQt ','Geopandas'],
             src: "https://github.com/mikeRobWard/spatial-interpolation-toolbox"
