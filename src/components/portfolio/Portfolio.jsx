@@ -20,7 +20,7 @@ export default function Portfolio() {
             title: "Building Footprint Map",
             desc: "Interactive map with over 1 million building footprints and labeled land use types",
             img: "",
-            tech: ["Javascript ", "Mapbox ", "Tippecanoe ", "Python "],
+            tech: ["JavaScript ", "Mapbox ", "Tippecanoe ", "Python "],
             src: "https://mikerobward.github.io/building-footprints/"
         },
         {
