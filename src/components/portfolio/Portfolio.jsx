@@ -12,20 +12,29 @@ export default function Portfolio() {
             title: "Spatial Interpolation Toolbox",
             desc: "A responsive GUI that performs six methods of spatial interpolation ",
             img: "",
-            tech: ['Python ', 'Pandas ', 'PyQt ','Geopandas'],
+            tech: ['Python ', 'Pandas ', 'PyQt ','GeoPandas'],
             src: "https://github.com/mikeRobWard/spatial-interpolation-toolbox"
         },
         {
             id: "2",
+            title: "Building Footprint Map",
+            desc: "Interactive map with over 1 million building footprints and labeled land use types",
+            img: "",
+            tech: ["Javascript ", "Mapbox ", "Tippecanoe ", "Python "],
+            src: "https://mikerobward.github.io/building-footprints/"
+        },
+        {
+            id: "3",
             title: ".mike(Ward) dev",
             desc: "The source code of this website",
             img: "",
             tech: ["React ", "Sass "],
             src: "https://github.com/mikeRobWard/mike-ward-dev"
         }
+        
     ]
     const handleClick = (way) => {
-        way === "left" ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 1) :
+        way === "left" ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : data.length - 1) :
         setCurrentSlider(currentSlider < data.length - 1 ? currentSlider + 1 : 0);
     }
 
