@@ -9,6 +9,14 @@ export default function Portfolio() {
     const data = [
         {
             id: "1",
+            title: "LLCs in NYC",
+            desc: "Interactive web map for exploring vacant land owned by LLCs in NYC",
+            img: "",
+            tech: ['React ', 'Mapbox ', 'Python ', 'PostgreSQL '],
+            src: "https://llcs-in-nyc.com"
+        },
+        {
+            id: "2",
             title: "Spatial Interpolation Toolbox",
             desc: "A responsive GUI that performs six methods of spatial interpolation ",
             img: "",
@@ -16,7 +24,7 @@ export default function Portfolio() {
             src: "https://github.com/mikeRobWard/spatial-interpolation-toolbox"
         },
         {
-            id: "2",
+            id: "3",
             title: "Building Footprint Map",
             desc: "Interactive map with over 1 million building footprints and labeled land use types",
             img: "",
@@ -24,7 +32,7 @@ export default function Portfolio() {
             src: "https://mikerobward.github.io/building-footprints/"
         },
         {
-            id: "3",
+            id: "4",
             title: ".mike(Ward) dev",
             desc: "The source code of this website",
             img: "",

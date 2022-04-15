@@ -16,20 +16,21 @@ export default function About() {
             <div className="a-right">
                 <h1 className="a-title">About Me</h1>
                 <p className="a-desc">
-                Hi, I'm Mike! I'm a geospatial data scientist & developer working in Philadelphia. I love building open-source projects and learning new technologies. Welcome to
+                <br />
+                Hi, I'm Mike! I'm a geospatial data scientist & software developer living in Philadelphia. I love working on open-source projects and learning new technologies. Welcome to
                 my website where I feature some of my favorite projects.
                 </p>
                 <br />
                 <p className="a-desc">
-                Here are a few facts about me:
+                I am fluent in:
                 </p>
 
                 <br/>
                 <ul>
-                    <li>I have three cats: Tofu, Maddie, and Frodo</li>
-                    <li>I love sci-fci horror, The Thing (1982) is my favorite</li>
-                    <li>I own more Magic: The Gathering cards than I know what to do with</li>
-                    <li>I've performed on-stage with the band MGMT. I bet you can't guess the instrument</li>
+                    <li> Languages: Python, Javascript, R, HTML, CSS</li>
+                    <li> Databases: PostgreSQL / PostGIS</li>
+                    <li> JS Frameworks & Libraries: React, Mapbox GL JS</li>
+                    <li> Python Libraries: Pandas, Geopandas, Seaborn, Matplotlib, scikit-learn</li>
                 </ul>
             </div>
         </div>

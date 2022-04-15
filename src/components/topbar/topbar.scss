@@ -19,7 +19,27 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
+        
+
+        .right-full{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                text-decoration-color: white;
+                text-decoration-line: 3px;
+                color: $mainColor;
+                font-size: 22px;
+                font-weight: 500;
+                transition: all 0.1s ease;
+            }
+            a:hover{
+                filter:brightness(60%);
+            }  
+        }
+
         .left{
             display:flex;
             align-items: center;
@@ -31,13 +51,14 @@
                 font-weight: 100px;
                 text-decoration: none; 
                 color: inherit; 
-
-                &:hover{
-                    filter:brightness(70%);
-                }    
+                transition: all 0.1s ease-in-out;         
             }
+            .logo:hover{
+                    filter:brightness(60%);
+                }  
         }
         .right{
+            display: none;
             .hamburger{
                 width: 32px;
                 height: 25px;
@@ -45,6 +66,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 cursor: pointer;
+                transition: 0.1s ease-in-out;
 
                 span{
                     width: 100%;
@@ -53,10 +75,10 @@
                     transform-origin: left;
                     transition: all 1s ease;
                 }
-                &:hover{
-                    filter:brightness(70%);
+                
+            }.hamburger:hover{
+                    filter:brightness(60%);
                 }
-            }
         }
     }
     &.active{
@@ -79,4 +101,14 @@
             }
         }
     }
+}
+
+@media screen and (max-width:700px) {
+    .right{
+        display: block !important;
+    }
+    .right-full{
+        display: none !important;
+    }
+
 }

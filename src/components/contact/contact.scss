@@ -136,25 +136,30 @@
             .github{
                 cursor: pointer;
                 color: $mainColor;
-                &:hover{
-                filter:brightness(70%);
-                }
+                transition: all 0.1s ease-in-out;
+                
             }
-            
+            .github:hover{
+                filter:brightness(70%);
+            }
             .twitter{
                 cursor: pointer;
                 color: $mainColor;
-                &:hover{
+                transition: all 0.1s ease-in-out;
+                
+            }
+            .twitter:hover{
                 filter:brightness(70%);
-                }
             }
             .mail{
                 cursor: pointer;
                 color: $mainColor;
-                &:hover{
+                transition: all 0.1s ease-in-out;
+            } 
+            .mail:hover{
                 filter:brightness(70%);
-                }
-            }           
-        }
+            }
+                  
+        } 
     }
 }

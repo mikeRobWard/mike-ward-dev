@@ -9,7 +9,7 @@
 
     .background{
         @include mobile{
-
+            display: none;
         }
         z-index: 0;
         overflow: hidden;
@@ -83,6 +83,7 @@
             display: list-item;
             list-style-position:inside;
             list-style-type: circle;
+            padding-bottom: 10px;
         }
         li::marker{
             color: $mainColor2;
