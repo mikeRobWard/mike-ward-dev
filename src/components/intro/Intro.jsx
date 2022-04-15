@@ -27,7 +27,7 @@ export default function Intro() {
             showCursor: false,
             typeSpeed: 55,
             loop: false,
-            startDelay: 1900,
+            startDelay: 2000,
             strings: ["I'm a geospatial data scientist & developer"]
         })
     }, []);
@@ -37,7 +37,7 @@ export default function Intro() {
             showCursor: false,
             typeSpeed: 55,
             loop: false,
-            startDelay: 4500,
+            startDelay: 4900,
             strings: ['Check out my projects ' ],
             onFinished: function(){
                 var clickHere = document.getElementById('click-here');
